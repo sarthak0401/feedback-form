@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Form</title>
+    <style>
+        body {
+            background-color:rgba(220, 243, 183, 0.739);
+        }
+        table,tr{
+    border:2px inset rgb(136, 233, 10); border-collapse: collapse;
+}
+        *{font-family: cursive; }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;border: 1px groove rgb(14, 86, 255); background-color: rgb(245, 175, 83);"> FORM FOR SEMINAR</h1>
+<form action="process-form.php" method="POST">
+    <div1>
+        <h>Enter your Name: </h>
+        <input type="text" placeholder="enter your name" name="Fname"><br><br>
+        <h>Enter your Phone no. : </h>
+        <input type="text" placeholder="enter your tel no." name="phone"><br><br>
+        <h>Enter your Email: </h>
+        <input type="text" placeholder="enter your email" name="email"><br><br>
+        <h>Enter your DOB (YYYY-MM-DD): </h>
+        <input type="text" placeholder="enter your date of birth" name="dob"><br><br>
+
+        <h>Select your Gender: </h>
+        
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        
+    </div1>
+<hr>
+    <br>
+    <div2>
+        <h4 style="border: 2px inset rgb(4, 116, 245); text-align: center; font-size: larger;"><b> Select seminar and provide  </b></h4><br>
+        <i>select respective seminar you attented, and give your appropriate  rating. If you haven't attended anyone or more seminars, leave blank</i>            
+         <hr>
+        <table style="width:100%";>
+
+            <tr style="width: 100%;"> 
+                <th rowspan="2" style="border:2px inset rgb(255, 196, 0)">Mathematics</th>  
+                <th > Rating </th>   
+                <td> </td>
+            </tr>
+            
+            <tr>
+                <td> 
+                    <input type="radio" name="Maths_rating" value="Very good">Very good<br>
+                    <input type="radio" name="Maths_rating" value="Good">good<br>
+                    <input type="radio" name="Maths_rating" value="Average">average<br>
+                    <input type="radio" name="Maths_rating" value="Poor">poor<br>
+                    <input type="radio" name="Maths_rating" value="Worst">worst<br></td>
+            
+            </tr>
+
+
+            <tr> 
+                <th rowspan="2" style="border:2px inset rgb(255, 196, 0)">English</th>   
+                <th> Rating </th>   
+            </tr>
+            
+            <tr >
+                <td> 
+                    <input type="radio" name="English_rating" value="Very good">Very good<br>
+                    <input type="radio" name="English_rating"value="Good">good<br>
+                    <input type="radio" name="English_rating" value="Average">average<br>
+                    <input type="radio" name="English_rating" value="Poor">poor<br>
+                    <input type="radio" name="English_rating" value="Worst">worst<br></td>
+               
+            </tr>
+            <tr> 
+                <th rowspan="2" style="border:2px inset rgb(255, 196, 0)">Coding Club</th>   
+                <th > Rating </th>   
+                <td> </td>
+            </tr>
+            
+            <tr >
+                <td> 
+                    <input type="radio" name="CodingClub_rating" value="Very good">Very good<br>
+                    <input type="radio" name="CodingClub_rating" value="Good">good<br>
+                    <input type="radio" name="CodingClub_rating" value="Average">average<br>
+                    <input type="radio" name="CodingClub_rating" value="Poor">poor<br>
+                    <input type="radio" name="CodingClub_rating" value="Worst">worst<br></td>
+               
+            </tr>
+
+            <tr> 
+                <th rowspan="2" style="border:2px inset rgb(255, 196, 0)">Music club</th>   
+                <th> Rating </th>   
+                <td> </td>
+            </tr>
+            
+            <tr >
+                <td > 
+                    <input type="radio" name="MusicClub_rating" value="Very good">Very good<br>
+                    <input type="radio" name="MusicClub_rating" value="Good">good<br>
+                    <input type="radio" name="MusicClub_rating" value="Average">average<br>
+                    <input type="radio" name="MusicClub_rating" value="Poor" >poor<br>
+                    <input type="radio" name="MusicClub_rating" value="Worst">worst<br></td>
+               
+            </tr>
+
+            <tr> 
+                <th rowspan="2" style="border:2px inset rgb(255, 196, 0)">Dance club</th>   
+                <th> Rating </th>   
+            </tr>
+            
+            <tr >
+                <td> 
+                    <input type="radio" name="DanceClub_rating" value="Very good">Very good<br>
+                    <input type="radio" name="DanceClub_rating" value="Good">good<br>
+                    <input type="radio" name="DanceClub_rating" value="Average">average<br>
+                    <input type="radio" name="DanceClub_rating" value="Poor">poor<br>
+                    <input type="radio" name="DanceClub_rating" value="Worst">worst<br></td>
+               
+            </tr>
+
+            
+           <table>
+            <br>
+            <br>
+            
+
+        <textarea name="Suggest" placeholder="Enter yours suggestion's, if any" ; style="width: 100%; height: 60px; background-color: rgb(197, 246, 238);"></textarea>
+
+    <br>
+    <br>
+
+    </div2>
+    <br>
+
+    <input type="submit">
+</form>
+
+</body>
+
+</html>
